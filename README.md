@@ -1,2 +1,11 @@
 # hello-world
-My first repository on github
+pipeline{
+ agent any
+   stages{
+     stage ('HELLO') {
+       steps {
+       echo "HELLO WORLD"
+       }
+     }
+   }
+}
